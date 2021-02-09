@@ -1,0 +1,15 @@
+server:
+  port: 19002
+spring:
+  profiles:
+    active: dev
+  application:
+    name: conifg-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jianjun2015/config.git
+          force-pull: true
+          username: jianjun2015
+          password: Qq352810579
